@@ -54,7 +54,7 @@
 - **DELETE /api/boards/delete/:id:**  
   This function handles the endpoint for deleting a saved board. It receives the board ID as a request parameter. It finds the board by the ID, checks if it exists, and deletes it from the database. It returns a success response if the board is deleted.
 
-## Utilities:
+## Utilities
 
 - **FischerChessGeneration.js**  
   This is a static javascript program that when run will generate an array of 8 characters that correspond the the pieces of a chessboard. This array will be converted to a JSON by the relevent endpoint before being sent to the client.
