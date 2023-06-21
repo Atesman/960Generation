@@ -1,0 +1,104 @@
+.ProfilePage {
+  min-height: 100vh; /* Changed from height to min-height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ProfileTitle {
+  margin-top: 130px;
+  top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ReturnButtonsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ReturnButtons {
+  width:90%;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #ffeecc;
+  border-radius: 5px;
+}
+
+.ReturnButtons:first-child {
+  margin-right: 10px;
+}
+
+.SavedBoardsView {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.commentBox {
+  margin-top: 10px;
+  width: 90%; /* adjust this to suit your design */
+  padding: 10px;
+  font-size: 16px; /* adjust this to suit your design */
+  border: 2px solid rgba(0, 0, 0, 0.2); /* semi-transparent border */
+  border-radius: 10px; /* rounded corners */
+  background-color: transparent; /* transparent background */
+  color: #000; /* text color, adjust this to suit your design */
+  transition: border-color 0.3s ease; /* transition for hover effect */
+}
+
+.commentBox:focus {
+  outline: none;
+  border-color: rgba(0, 0, 0, 0.5); /* darker border when focused */
+}
+
+.commentBox::placeholder {
+  color: rgba(0, 0, 0, 0.5); /* semi-transparent placeholder text */
+}
+
+.EditButton {
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.EditButton:active,
+.EditButton:focus,
+.EditButton:hover {
+  background-color: #ffeecc;
+  border-color: black;
+  opacity: 0.7;
+}
+
+.ReturnButtons:active,
+.ReturnButtons:focus,
+.ReturnButtons:hover {
+  background-color: #339933;
+  border-color: black;
+  opacity: 0.7;
+}
+
+.DeleteButton {
+  position: absolute;
+  right: 0;
+  top: 45px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #ff4444;
+  border-color: black
+}

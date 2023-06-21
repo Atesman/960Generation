@@ -1,0 +1,114 @@
+.LoginSignupPage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+}
+
+.title {
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+@media (max-height: 770px) {
+  .title {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@media (min-height: 771px) {
+  .title {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.input-field label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-field input {
+  height: 30px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-field input:focus {
+  outline: none;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.home-button-container {
+   margin-top: 12px;
+}
+
+.bttn {
+  width: 100px;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #ffeecc;
+  border-radius: 5px;
+
+}
+
+.bttn:first-child {
+  margin-right: 10px;
+}
+
+.bttn2 {
+  width: 100px;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #ffeecc;
+  border-radius: 5px;
+}
+
+.bttn:active,
+.bttn:focus,
+.bttn:hover {
+  background-color: #339933;
+  border-color: black;
+  opacity: 0.7;
+}
+
+.bttn2:active,
+.bttn2:focus,
+.bttn2:hover {
+  background-color: #339933;
+  border-color: black;
+  opacity: 0.7;
+}

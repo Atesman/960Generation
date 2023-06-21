@@ -1,0 +1,37 @@
+
+.header {
+  z-index: 1000;
+  position: fixed;
+  top: 20px;
+  background-color: #339933;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  border: 2px solid #000;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.logo {
+  margin: 0;
+  color: white;
+  font-size: 26px;
+  padding-left: 20px;
+  font-style: italic;
+}
+
+@media (max-height: 570px) {
+  .header {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@media (min-height: 571px) {
+  .header {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}

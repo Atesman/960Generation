@@ -1,0 +1,44 @@
+
+.chess-board {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 320px;
+  border: 2px solid black;
+}
+
+.board-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.board-cell {
+  flex: 1;
+  height: 40px;
+}
+
+.board-cell.white {
+  background-color: #ffcc99;
+}
+
+.board-cell.black {
+  background-color: #339933;
+}
+
+.piece {
+  font-size: 32px;
+  line-height: 40px;
+  color:black;
+}
+
+.piece-white {
+  font-size: 32px;
+  line-height: 40px;
+  color: #f0f0f0;
+}
+
+.piece-black {
+  font-size: 32px;
+  line-height: 40px;
+  color: #0a0a0a;
+}
